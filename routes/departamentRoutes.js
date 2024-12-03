@@ -16,4 +16,8 @@ router.post("/api/departaments", departamentController.createDepartament);
 
 router.patch("/api/departaments/:idDepartament", departamentController.updateDepartament);
 
+router.delete("/api/departaments/:idDepartament", departamentController.deleteOneDepartament);
+
+router.delete("/api/departaments/", departamentController.deleteAllDepartaments);
+
 export default router;

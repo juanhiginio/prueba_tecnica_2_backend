@@ -5,6 +5,7 @@ import cors from 'cors';
 import databaseConnection from './db/config.js';
 
 import departamentRoutes from './routes/departamentRoutes.js';
+import employedRoutes from './routes/employedRoutes.js';
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use(cors());
 
 // Rutas
 app.use(departamentRoutes);
+app.use(employedRoutes);
 
 app.listen(PORT, () => {
     console.log(`[SERVER] Server running in port: http://localhost:${PORT}`);
